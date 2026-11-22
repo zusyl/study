@@ -9,7 +9,7 @@ while weather not in range_word:
         print('вали неудачник')
         break
     weather = input("Какая сегодня погода? Солнечно/Снег/Дождь/Облачно ").strip().lower()
-if weather in range_word:
+else:
     if weather == "солнечно":
         print('отличный день. иди гулять')
     elif weather == 'снег':
@@ -18,4 +18,4 @@ if weather in range_word:
         print('возьми зонт')
     else:
         print('да пофиг, все равно иди гулять')
-print(f'ты использовал {count} попыток')
+    print(f'ты использовал {count} попыток')
